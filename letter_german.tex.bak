@@ -1,0 +1,112 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage[pdftex]{color}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+ \usepackage[dvips]{graphicx}
+\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Patrick}
+\def\familyname{Grüner}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname~\familyname's Bewerbungsschreiben}
+\def\FileSubject{Bewerbungsschreiben}
+\def\FileKeyWords{\firstname~\familyname, Bewerbungsschreiben}
+
+\renewcommand{\ttdefault}{pcr}
+\hyphenation{ins-be-son-de-re}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+%Liebherr yellow {254,180,1} black {0,0,0}
+%Multivac {0, 105, 180}
+%Grob {0,58,121}
+\definecolor{firstnamecolor}{RGB}{254,180,1}
+\definecolor{familynamecolor}{RGB}{254,180,1}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+	\raggedleft%
+	{\bfseries {\color{firstnamecolor}\firstname}~{\color{familynamecolor}\familyname}}\\[.35ex]
+	\small\itshape%
+	Schneiderhansenweg 10\\
+	87700 Memmingen\\[.35ex]
+	\Mobilefone~+49 176 47705895\\
+	\Letter~\href{mailto:patrick.gmm91@gmail.com}{patrick.gmm91@gmail.com}
+\end{minipage}\\[0.5em]
+%
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}}
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedright%
+	% {\bfseries {\color{firstnamecolor}
+	\vspace*{1em}
+	Liebherr-Verzahntechnik GmbH \\[.35ex]
+	% }}
+	\small%
+	Kaufbeurer Straße 141\\
+	87437 Kempten/Allgäu
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedleft % US style
+	\today
+	%April 6, 2006 % US informal style
+	%05/04/2006 % UK formal style
+\end{minipage}\\[1em]
+\raggedright
+
+{\bfseries \color{familynamecolor}Bewerbung als Softwareentwickler/Informatiker für Automationssysteme (2585)\\[1.5em]}
+
+Sehr geehrter Herr Hemmerle,\\[1em]
+%
+auf der Freiraum Messe in Memmingen überzeugte mich Herr ... durch ein aufschlussreiches Gespräch, dass Liebherr für mich ein guter Arbeitgeber ist. Darüber hinaus konnte ich während meines Praxissemesters schon gute Erfahrungen bei der Liebherr Aerospace GmbH machen. 
+Bei der Recherche im Liebherr Karierreportal sprach mich die Stelle als Softwareentwickler für Automationssysteme sofort durch interessante Aufgaben in einem technischen Umfeld an. Ich bin mir sicherer, dass meine bisherigen Interessen und Erfahrungen sich mit den Anforderungen dieser Stelle decken, sodass es sowohl für mich als auch für die Liebherr-Verzahntechnik GmbH von Vorteil ist.
+
+Derzeit befinde ich mich in den letzten Zügen des Informatikstudiums und fertige meine Masterarbeit bei der CMORE Automotive GmbH an. Hierbei entwickle ich eigenständig eine Applikation zur Datenannotierung von 3D-Punktwolken mittels Virtual Reality Brille. Dabei vertiefe ich meine Erfahrung in der Programmierung innerhalb des .NET Frameworks mittels der Sprache C\# , da dies die Basis der Unity Engine ist, mit der die Applikation entwickelt wird. Des Weiteren lerne ich hierbei den Umgang mit neuartigen Visualisierungsmöglichkeiten, was ich ebenfalls während eines Universitätsprojektes tat, bei dem ich eine Augmentet Reality Applikation für die Microsoft Hololens entwickelte.
+
+Davor nahm ich mit dem Team UniAutonom am Audi Autonomous Driving Cup 2017 Teil, bei dem es darum ging für ein elektrisch getriebenes, Audi Q2-Modellfahrzeug die Software-Architektur und Algorithmen zu entwickeln, damit das Fahrzeug vollständig autonom einen unbekannten Parcours absolviert. Alle Softwarekomponenten wurden hierbei als C++-Filter programmiert, welche mittels des ADTF-Frameworks sowohl entwickelt, als auch getestet wurden. Meine persönliche Aufgabe bestand darin, eine kamerabasierte Fahrbahn- und Kreuzungserkennung und  zu entwickeln und aus den daraus resultierenden Daten die nötigen Fahrmanöver zu berechnen und einzuleiten. Des Weiteren verwendete ich die Ultraschallsensoren um Sicherheitsmechanismen zu programmieren, welche das Auto bei den Fahrmanövern vor anderen Objekten schützen sollte.
+
+Generell war mein Interesse an der technischen Informatik immer groß, weshalb ich gerne sowohl Praktika der Industrierobotik und Embedded Systems belegte, als auch selbst als Tutor für Grundlagen der Robotik am Lehrstuhl für Software \& Systems Engineering arbeitete. Deshalb bin ich sehr davon überzeugt Sie und Ihr Team durch meine bisher erlernten Fähigkeiten als Teamfähigen, eigenständigen und strukturierten Mitarbeiter zu unterstützen.
+
+Mein frühestmöglicher Eintrittstermin ist der 01. Juni 2018. Für ein persönliches Gespräch stehe ich Ihnen gerne jederzeit zur Verfügung.
+  
+Mit freundlichen Grüßen,\\[3em]
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries \firstname~\familyname}\\
+%
+\vfill%
+{\slshape \bfseries Bewerbungsunterlagen}\\
+% {\slshape Curriculum Vit\ae{}}
+\end{document}
