@@ -1,0 +1,111 @@
+%% start of file `cv_german.tex', based on `template_en.tex` by Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% 
+% Thomas Quaritsch <t.quaritsch@student.tugraz.at>
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage[german]{babel}
+\usepackage{moderncv-additions}
+
+% moderncv themes
+\moderncvtheme{casual}   % optional arguments are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}			  % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+
+\AtBeginDocument{\recomputelengths}           % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Patrick}
+\familyname{Grüner}
+%\title{Resumé title (optional)}              
+\address{Jahnstraße 5}{87700 Memmingen}        
+\mobile{+49 176 47705895}                     
+%\phone{phone (optional)}                      
+\email{patrick.gmm91@gmail.com}                      
+\photo[64pt]{picture}                          % '64pt' is the height the picture must be resized to and 'picture' is the name of the 
+\quote{``Das ist ein toller Frusterspruch\\ von Friede Frusterfrau.'' -- Friede Frusterfrau}                 
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+% color redefinitions must be after \begin{document}!
+%Liebherr yellow {254,180,1} black {0,0,0}
+%Multivac {0, 105, 180}
+%Grob {0,58,121}
+\definecolor{firstnamecolor}{RGB}{0,0,0}
+\definecolor{familynamecolor}{RGB}{0,0,0}
+\definecolor{quotecolor}{RGB}{0, 105, 180}
+\definecolor{addresscolor}{RGB}{0,0,0}
+\definecolor{sectionrectanglecolor}{RGB}{0, 105, 180}
+\definecolor{sectiontitlecolor}{RGB}{0, 105, 180}
+\definecolor{subsectioncolor}{RGB}{0, 105, 180}
+\definecolor{footersymbolcolor}{RGB}{0,0,0}
+
+\makeatletter
+
+%\pagestyle{empty}
+%\chapter*{Bewerbungs}{unterlagen}
+%
+%\vspace*{50mm}
+%\begin{minipage}{\textwidth}
+%	\vspace*{3mm}
+%	\familynamestyle{\@firstname}~~\firstnamestyle{\@familyname} 	
+%	\hspace*{5mm}{{\color{firstnamecolor}\includegraphics[width=128pt]{Anlagen/picture}}}\\[3mm]
+%	\@addressstreet, \@addresscity ~~~ \mobilesymbol~\@mobile ~~~ \emailsymbol~\@email
+%\end{minipage}
+%\begin{minipage}{70pt}
+%	
+%\end{minipage}
+%
+%\vfill
+%
+%\begin{minipage}{1.0\textwidth}
+%	\section{Inhalt}
+%	\tableofcontents
+%\end{minipage}
+%
+%\newpage
+\pagestyle{fancy}
+
+%\chapter{Curriculum}{~Vit\ae}
+\chapter{Tätigkeitsbeschreibung}{}
+%\makequote
+\\
+Meine aktuelle Tätigkeit als Softwareentwickler bei der Liebherr Verzahntechnik GmbH.\\
+Beschäftigungsdauer: 06/2018 bis heute (nicht gekündigtes Arbeitsverhältnis)\\
+
+\section{Projektleitung für das Produkt  Depalettieren} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Ziel dieses Entwicklungsprojektes war es, ein standardisiertes Vision-System zur Erkennung von Bauteilen bei klassischen Depalettier-Anwendungen zu ermitteln. Hierbei arbeitete ich mich zunächst in die Thematik ein und ermittelte die Anforderungen an das Produkt zusammen mit Vertrieb und Produktmanagement. Anschließend entwickelte ich technische Lösungsvorschläge, welche abteilungsübergreifend mit der Geschäftsführung abgestimmt wurden. Die beschlossenen Lösungsansätze wurden dann von mir mittels eigens erstellten Testszenarien geprüft und die dazu nötigen Systemkomponenten ermittelt. Nach Reporting der gesamten Projektparameter und des finalen Systems an die Geschäftsleitung wurde das Projekt erfolgreich innerhalb des vorgegebenen Budgets abgeschlossen. Bis heute betreue ich aktiv Kundentests und -Projekte, welche dieses System betreffen.
+
+\section{Softwareentwicklung LHRobotics.Vision} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+LHRobotics.Vision ist eine Software zur Ermittlung der Lage von chaotisch angeordneten Bauteilen auf Basis von 3D-Sensordaten. Die C++ basierte Software wurde initial vom Fraunhofer Institut IPA entwickelt und von der Liebherr Verzahntechnik GmbH für Kundenprojekte eingesetzt, bis sich Liebherr dazu entschloss selbst in die Entwicklung einzusteigen. Ziel der Übernahme war es, die Software industrietauglich zu machen und diese auch als Standalone-Version zu vermarkten. Meine Aufgabe war es zunächst den Übergabeprozess der Software von Fraunhofer zu Liebherr zu koordinieren und mich mit Hilfe des Fraunhofer Instituts in den Quellcode einzuarbeiten. Anschließend ermittelte ich im Entwicklungsteam die ersten Anforderungen zur Verbesserung der Software und setzte diese um. Bis heute konnten wir eine erhebliche Verbesserung der Software in Punkten wie Bedienbarkeit, Stabilität und Performance erzielen was uns sowohl interne, als auch externe Anwender bestätigen. Bis heute entwickeln wir weitere Verbesserungen und neue Features für die Software. Zusätzlich zur Entwicklung übernehme ich auch die technische Durchführung von Kundenprojekten und Machbarkeitsanalysen. Somit bin ich gleichzeitig als Anwender der Software aktiv.
+
+\section{Vermarktung LHRobotics Vision} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+LHRobotics.Vision wurde zunächst nur für die Umsetzung schlüsselfertiger Automationsanlagen für Kunden genutzt. Um mehr Softwarelizenzen vermarkten zu können soll die Software direkt an Endkunden angeboten werden. Ziel des Vermarktungs-Projektes ist es ein Konzept zu entwickeln, um die Software als Standalone verkaufsfähig zu machen. Auch hierbei nehme ich eine leitende Rolle ein, koordiniere die Anforderungen von Produktmanagement und Vertrieb, erstelle Schulungs- und Dokumentationskonzepte und ermittle noch fehlende Verkaufs-Features der Software, welche ich dann selber umsetze. Das Projekt ist aktuell noch im Gange.
+
+\newpage
+
+\section{Projektleitung Forschungsprojekt Sim4Dexterity} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Die Liebherr Verzahntechnik ist einer der Projektpartner bei dem vom BMBF geförderten Forschungsprojekt Sim4Dexterity. Ziel dieses Projektes ist die Erzeugung synthetischer Daten für die Robotermanipulation mit hochwertigen, interaktiven und validierbaren Simulationswerkzeugen. Hierbei bin ich für die Projektleitung seitens Liebherr verantwortlich. Als Projektleiter bin ich zunächst der zentrale Ansprechpartner für interne und externe Nachfragen übernehme die bürokratische Verantwortung bei der Erstellung von Anträgen, offiziellen Dokumenten und auch deren Inhalten, wie geplanten Budgets und Zeitaufwendungen. Zusätzlich bin ich aber auch als durchführender Mitarbeiter bei den Entwicklungsarbeiten aktiv, wie beispielsweise der Erstellung von Simulationsmodellen und deren Programmierung innerhalb der verwendeten Simulationsumgebung. Zwischenergebnisse reporte ich in festgelegten Abständen der internen Geschäftsführung und dem externen Projektträger.
+\end{document}
+
+% end of file `cv_german.tex'
