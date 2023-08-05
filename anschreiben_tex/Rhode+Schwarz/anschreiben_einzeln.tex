@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage[pdftex]{color}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+ \usepackage[dvips]{graphicx}
+\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.8]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Patrick}
+\def\familyname{Grüner}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname~\familyname's Bewerbungsschreiben}
+\def\FileSubject{Bewerbungsschreiben}
+\def\FileKeyWords{\firstname~\familyname, Bewerbungsschreiben}
+
+\renewcommand{\ttdefault}{pcr}
+\hyphenation{ins-be-son-de-re}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+%Liebherr yellow {254,180,1} black {0,0,0}
+%Multivac {0, 105, 180}
+%Grob {0,58,121}
+%Rhode {0,60,124}
+%BHS {0,80,148}
+\definecolor{firstnamecolor}{RGB}{0,60,124}
+\definecolor{familynamecolor}{RGB}{0,60,124}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+	\raggedleft%
+	{\bfseries {\color{firstnamecolor}\firstname}~{\color{familynamecolor}\familyname}}\\[.35ex]
+	\small\itshape%
+	Jahnstraße 5\\
+	87700 Memmingen\\[.35ex]
+	\Mobilefone~+49 176 47705895\\
+	\Letter~\href{mailto:patrick.gmm91@gmail.com}{patrick.gmm91@gmail.com}
+\end{minipage}\\[0.5em]
+%
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}}
+%
+\begin{minipage}[t]{.5\textwidth}
+	\raggedright%
+	% {\bfseries {\color{firstnamecolor}
+	\vspace*{1em}
+	Rohde \& Schwarz Messgerätebau GmbH\\[.35ex]
+	% }}
+	\small%
+	Rohde-und-Schwarz-Str. 1\\
+	87700 Memmingen
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedleft % US style
+	\today
+	%April 6, 2006 % US informal style
+	%05/04/2006 % UK formal style
+\end{minipage}\\[1em]
+\raggedright
+
+{\bfseries \color{familynamecolor}Bewerbung als Projektleiter Entwicklung für standardisierte Projekt-IT-Komponenten (3136)\\[1.5em]}
+
+Sehr geehrter Herr Breher,\\[1em]
+%
+auf der Suche nach neuen beruflichen Entwicklungschancen wurde ich von befreundeten Mitarbeitern der Rhode \& Schwarz GmbH auf die aktuellen Stellenausschreibungen ihrer Firma aufmerksam gemacht. Die oben genannte Stelle als Projektleiter weckte sofort mein Interesse, da sich diese optimal mit meiner zukünftigen beruflichen Vorstellung deckt. Zudem bin ich sehr davon überzeugt, mit meinen bisherigen Erfahrungen im Bereich Projektleitung und Produkteinführung, die Zukunft der Rhode \& Schwarz GmbH erfolgreich mitzugestalten.
+
+Vor knapp fünf Jahren begann ich bei meinem aktuellen Arbeitgeber, der Liebherr Verzahntechnik GmbH, als Softwareentwickler für eine Software im Bereich der Industrie-Automation (LHRobotics.Vision). Durch technische Expertise, Eigeninitiative und meine Bereitschaft Verantwortung zu übernehmen, habe ich schon nach kurzer Zeit die Leitung erster Entwicklungsprojekte übernommen. Bei diesen Projekten handelt es sich sowohl um die Implementierung neuer Features in die angesprochene Software, als auch um die Einführung von neuen Standard-Hardwarekomponenten und -Softwaretools für unsere Automationsanlagen. Über mehrere Abteilungen hinweg übernehme ich hierbei die Konzeption und Koordination von Anforderungsanalysen, die Aufgaben- und Ressourcenplanungen und die Aufstellung und Einhaltung von Kosten- und Zeitplänen. Bei der Umsetzung dieser Projekte bin ich allerdings nicht nur leitend tätig, sondern setze ebenso technische Implementierungen, Machbarkeitsuntersuchungen und Tests um. Projektfortschritte werden von mir in regelmäßigen Abständen der Geschäftsleitung in Form von Statusmeetings und Design Reviews vorgestellt. Auf diese Weise habe ich nun schon mehrere erfolgreiche Projekte abgeschlossen, beispielsweise die Einführung von standardisierten Bildverarbeitungskomponenten und die Umsetzung des ersten KI-Features in die besagte Software. Inzwischen bin ich durch meine vielseitigen Tätigkeiten zum zentralen Ansprechpartner für Bildverarbeitungs- und Technologielösungen der Liebherr Automationssparte geworden.
+
+Wenn Sie also einen Projektleiter suchen, der nicht nur koordinative Aufgaben übernehmen kann, sondern auch durch technisches Know How, eigenverantwortliches Arbeiten und Kommunikationsbereitschaft besticht, dann freue ich mich sehr über eine Einladung zu einem Vorstellungsgespräch.  
+
+Mit freundlichen Grüßen,\\[3em]
+
+\includegraphics[scale=0.1]{C:/Users/Patrick/Documents/Bewerbung/Anlagen/Unterschrift}\\
+{\bfseries \firstname~\familyname}\\
+%
+\vfill%
+%{\slshape \bfseries Bewerbungsunterlagen}\\
+% {\slshape Curriculum Vit\ae{}}
+\end{document}

@@ -22,6 +22,8 @@
 \setlength{\hintscolumnwidth}{3cm}			  % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 
+\usepackage{xcolor}
+
 \AtBeginDocument{\recomputelengths}           % required when changes are made to page layout lengths
 
 % personal data
@@ -44,16 +46,16 @@
 \begin{document}
 
 % color redefinitions must be after \begin{document}!
-%Liebherr yellow {254,180,1} black {0,0,0}
+%Liebherr yellow {253,196,0} black {0,0,0}
 %Multivac {0, 105, 180}
 %Grob {0,58,121}
 \definecolor{firstnamecolor}{RGB}{0,0,0}
 \definecolor{familynamecolor}{RGB}{0,0,0}
-\definecolor{quotecolor}{RGB}{0, 105, 180}
+\definecolor{quotecolor}{RGB} {253,196,0}
 \definecolor{addresscolor}{RGB}{0,0,0}
-\definecolor{sectionrectanglecolor}{RGB}{0, 105, 180}
-\definecolor{sectiontitlecolor}{RGB}{0, 105, 180}
-\definecolor{subsectioncolor}{RGB}{0, 105, 180}
+\definecolor{sectionrectanglecolor}{RGB}{253,196,0}
+\definecolor{sectiontitlecolor}{RGB}{253,196,0}
+\definecolor{subsectioncolor}{RGB}{253,196,0}
 \definecolor{footersymbolcolor}{RGB}{0,0,0}
 
 \makeatletter
@@ -82,7 +84,6 @@
 %\newpage
 \pagestyle{fancy}
 
-%\chapter{Curriculum}{~Vit\ae}
 \chapter{Lebenslauf}{}
 %\makequote
 
@@ -104,7 +105,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cventry{06/2018 -- heute}{Softwareentwickler}{Liebherr Verzahntechnik GmbH}{Kempten}{}
-{Entwicklung von Softwarelösungen im Automationsbereich "Bin Picking", Projektleitung und Hauptverantwortlichkeit für 2D- und 3D-Vision Systeme, Projektleitung und Beteiligungen an staatlich geförderten Forschungsprojekten}  % arguments 3 to 6 are optional
+{Entwicklung und Wartung der Software LHRobotics.Vision, Projektleitung und Hauptverantwortlichkeit für 2D- und 3D-Vision Systeme, Projektleitung und Beteiligungen an staatlich geförderten Forschungsprojekten}  % arguments 3 to 6 are optional
 
 \section{Akademische Laufbahn} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,7 +116,7 @@
 
 \section{Sonstige Erfahrungen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cventry{11/2017 -- 06/2018}{Masterarbeit}{CMORE Automotive GmbH}{}{}{Entwicklung einer Virtual Reality Applikation mittels der Unity-.NET Umgebung zur annotierung von 3D-Punktwolken}
+\cventry{11/2017 -- 06/2018}{Masterarbeit}{CMORE Automotive GmbH}{}{}{Entwicklung einer Virtual Reality Applikation mittels der Unity-.NET Umgebung zur Annotierung von 3D-Punktwolken}
 %\cventry{10/2017 -- 02/2018}{Projektarbeit}{Universität Augsburg}{}{}{Entwicklung einer Augmented Reality Applikation für die Microsoft Hololens AR-Brille mittels der Unity-.NET Umgebung, um elektrische Felder von kapazitiven Sensoren holographisch darzustellen}
 \cventry{04/2017 -- 11/2017}{Audi Autonomous Driving Cup}{Universität Augsburg}{}{}{Entwicklung von vollautomatischen Fahrfunktionen und die dafür notwendigen Software-Architekturen innerhalb von C++-ADTF-Filtern für Audi-Q2-Modellfahrzeuge %im Maßstab 1:8
 }
@@ -135,10 +136,10 @@
 \section{IT Kompetenzen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvline{Programmiersprachen}{C++ (gut), Lua(gut),C\# und  C und Java(grundlegend)}
+\cvline{Programmiersprachen}{C++ (gut), Lua (gut),C\# und  C und Java (grundlegend)}
 \cvline{IDEs}{Visual Studio, Unity, CoppeliaSim, Halcon HDevelop}
 \cvline{Office}{Word, \LaTeX , Powerpoint, Outlook, Excel, Photoshop}
-\cvline{Robotik-Kenntnisse}{Fanuc und Kuka(grundlegend)}
+\cvline{Robotik-Kenntnisse}{Fanuc und Kuka (grundlegend)}
 
 \section{Sprachen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

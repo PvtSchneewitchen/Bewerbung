@@ -1,0 +1,113 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage[pdftex]{color}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+ \usepackage[dvips]{graphicx}
+\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Patrick}
+\def\familyname{Grüner}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname~\familyname's Bewerbungsschreiben}
+\def\FileSubject{Bewerbungsschreiben}
+\def\FileKeyWords{\firstname~\familyname, Bewerbungsschreiben}
+
+\renewcommand{\ttdefault}{pcr}
+\hyphenation{ins-be-son-de-re}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+%Liebherr yellow {254,180,1} black {0,0,0}
+%Multivac {0, 105, 180}
+%Grob {0,58,121}
+\definecolor{firstnamecolor}{RGB}{254,180,1}
+\definecolor{familynamecolor}{RGB}{254,180,1}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+	\raggedleft%
+	{\bfseries {\color{firstnamecolor}\firstname}~{\color{familynamecolor}\familyname}}\\[.35ex]
+	\small\itshape%
+	Jahnstraße 5\\
+	87700 Memmingen\\[.35ex]
+	\Mobilefone~+49 176 47705895\\
+	\Letter~\href{mailto:patrick.gmm91@gmail.com}{patrick.gmm91@gmail.com}
+\end{minipage}\\[0.5em]
+%
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}}
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedright%
+	% {\bfseries {\color{firstnamecolor}
+	\vspace*{1em}
+	Liebherr-Hydraulikbagger GmbH \\[.35ex]
+	% }}
+	\small%
+	Liebherrstraße 12\\
+	88457 Kirchdorf an der Iller
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedleft % US style
+	\today
+	%April 6, 2006 % US informal style
+	%05/04/2006 % UK formal style
+\end{minipage}\\[1em]
+\raggedright
+
+{\bfseries \color{familynamecolor}Bewerbung als Softwareentwickler Automatisierung (m/w/d)\\[1.5em]}
+
+Sehr geehrte Frau Prestel,\\[1em]
+%
+auf der Suche nach einer innovativen beruflichen Perspektive bin ich auf ihre Ausschreibung des Softwareentwicklers für Automatisierung aufmerksam geworden. Diese zeichnet sich für mich sowohl durch ihr spannendes Themengebiet als auch durch die innovativen Anforderungen aus. Darüber hinaus knüpft das Aufgabengebiet ideal an meine bisherige Tätigkeit als Softwareentwickler für Autamationssysteme an.
+
+durch ein Gespräch mit Herrn {\color{red}Mustermann} auf der Freiraum Messe in Memmingen und meine positiven Erfahrungen mit der Liebherr Aerospace GmbH in der Vergangenheit entschloss ich mich, auf der Suche nach meinem Berufseinstieg, das Karriereportal von Liebherr zu nutzen. Dort stieß ich auf Ihre sehr interessante Stelle in der Entwicklung für Automationssysteme. {\color{red}Ich bin sehr davon überzeugt, dass sich diese mit meinen Interessen und Erfahrungen deckt, sodass es für mich und für Sie von Vorteil ist}.      
+
+Derzeit befinde ich mich in den letzten Zügen des Informatikstudiums und fertige meine Masterarbeit bei der CMORE Automotive GmbH an. Hierbei entwickle ich eigenständig eine Applikation zur Klassifizierung von Objekten in 3D-Punktwolken mittels Virtual Reality Brille. Dabei vertiefe ich meine Erfahrung in der Programmierung innerhalb des .NET Frameworks mittels C\# , da dies die Basis der Unity Engine ist, mit der die Applikation entwickelt wird. Des Weiteren lerne ich hierbei den Umgang mit neuartigen Visualisierungsmöglichkeiten, was ich ebenfalls während eines Universitätsprojektes tat, bei dem ich eine Augmentet Reality Applikation für die Microsoft Hololens entwickelte.
+
+Davor nahm ich mit dem Team UniAutonom, bestehend aus fünf Studenten, am Audi Autonomous Driving Cup 2017 Teil, bei dem es darum ging für ein elektrisch getriebenes Modellfahrzeug die Software-Architektur und Algorithmen im ADTF-Framework zu entwickeln, damit das Fahrzeug vollständig autonom einen unbekannten Parcours absolviert. Mit verantwortungsvoller und strukturierter Teamarbeit erreichten wir dabei das Finale. Ich selbst sammelte durch die Teilnahme sowohl einschlägige Erfahrungen in der C++-Programmierung als auch im Bereich Machine Vision, da meine persönliche Aufgabe darin bestand eine kamerabasierte Fahrbahn- und Kreuzungserkennung zu entwickeln.
+
+Des Weiteren arbeitete ich am Lehrstuhl für Software \& Systems Engineering als Tutor für Robotik und absolvierte diverse Praktika in Industrierobotik und Embedded Systems an der Universität Augsburg, sodass ich mich gut gerüstet für einen Job in einem industriellen Umfeld fühle. Meine bisherigen Aufgaben und Herausforderungen meisterte ich stets durch schnelle Auffassungsgabe und eigenverantwortlichem Handeln.
+
+Ich würde mich sehr darüber freuen Sie und Ihr Team durch meine bisherigen und auch zukünftig erlangten Erfahrungen und Kenntnisse zu unterstützen. Selbstverständlich stehe ich Ihnen für ein persönliches Gespräch jederzeit zur Verfügung. Nach Beendigung des Vertrags für meine Masterarbeit wäre mein frühestmöglicher Eintrittstermin der 01. Juni 2018.
+  
+Mit freundlichen Grüßen,\\[3em]
+
+\includegraphics[scale=0.1]{/Users/Patrick/Documents/Bewerbung/Anlagen/Unterschrift}\\
+{\bfseries \firstname~\familyname}\\
+%
+\vfill%
+%{\slshape \bfseries Bewerbungsunterlagen}\\
+% {\slshape Curriculum Vit\ae{}}
+\end{document}

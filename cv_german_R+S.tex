@@ -22,6 +22,8 @@
 \setlength{\hintscolumnwidth}{3cm}			  % if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 
+\usepackage[dvipsnames]{xcolor}
+
 \AtBeginDocument{\recomputelengths}           % required when changes are made to page layout lengths
 
 % personal data
@@ -44,17 +46,18 @@
 \begin{document}
 
 % color redefinitions must be after \begin{document}!
-%Liebherr yellow {254,180,1} black {0,0,0}
+%Liebherr yellow {253,196,0} black {0,0,0}
 %Multivac {0, 105, 180}
+%Rhode {0,60,124}
 %Grob {0,58,121}
-%BHS {0,80,148}
+%Boeringer {1,51,103}
 \definecolor{firstnamecolor}{RGB}{0,0,0}
 \definecolor{familynamecolor}{RGB}{0,0,0}
-\definecolor{quotecolor}{RGB}{0,80,148}
+\definecolor{quotecolor}{RGB} {1,51,103}
 \definecolor{addresscolor}{RGB}{0,0,0}
-\definecolor{sectionrectanglecolor}{RGB}{0,80,148}
-\definecolor{sectiontitlecolor}{RGB}{0,80,148}
-\definecolor{subsectioncolor}{RGB}{0,80,148}
+\definecolor{sectionrectanglecolor}{RGB}{1,51,103}
+\definecolor{sectiontitlecolor}{RGB}{1,51,103}
+\definecolor{subsectioncolor}{RGB}{1,51,103}
 \definecolor{footersymbolcolor}{RGB}{0,0,0}
 
 \makeatletter
@@ -83,7 +86,6 @@
 %\newpage
 \pagestyle{fancy}
 
-%\chapter{Curriculum}{~Vit\ae}
 \chapter{Lebenslauf}{}
 %\makequote
 
@@ -104,9 +106,8 @@
 \section{Berufliche Laufbahn} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cventry{06/2018 -- heute}{Softwareentwickler}{Liebherr Verzahntechnik GmbH}{Kempten}{}
-{\begin{itemize}\item süüüüüü \item üüüüüüüüüüüü  \end{itemize}}
-%{Entwicklung von Softwarelösungen im Automationsbereich "Bin Picking", Projektleitung und Hauptverantwortlichkeit für 2D- und 3D-Vision Systeme, Projektleitung und Beteiligungen an diversen BMBF-Forschungsprojekten}  % arguments 3 to 6 are optional
+\cventry{06/2018 -- heute}{Projektleiter/Softwareentwickler}{Liebherr Verzahntechnik GmbH}{Kempten}{}
+{ Projektleitung und Hauptverantwortlichkeit für Bildverarbeitungs- und Technologielösungen im Bereich Automation, Weiterentwicklung und Wartung der Software \textcolor{RoyalBlue}{\href{https://www.youtube.com/watch?v=-PjGzlYVw8U}{LHRobotics.Vision}}, Projektleitung und Beteiligungen an staatlich geförderten Forschungsprojekten}  % arguments 3 to 6 are optional
 
 \section{Akademische Laufbahn} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,9 +118,9 @@
 
 \section{Sonstige Erfahrungen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\cventry{11/2017 -- 06/2018}{Masterarbeit}{CMORE Automotive GmbH}{}{}{Entwicklung einer Virtual Reality Applikation mittels der Unity-.NET Umgebung zur annotierung von 3D-Punktwolken}
+\cventry{11/2017 -- 06/2018}{Masterarbeit}{CMORE Automotive GmbH}{}{}{Entwicklung einer Virtual Reality Applikation mittels der Unity-.NET Umgebung zur Annotierung von 3D-Punktwolken}
 %\cventry{10/2017 -- 02/2018}{Projektarbeit}{Universität Augsburg}{}{}{Entwicklung einer Augmented Reality Applikation für die Microsoft Hololens AR-Brille mittels der Unity-.NET Umgebung, um elektrische Felder von kapazitiven Sensoren holographisch darzustellen}
-\cventry{04/2017 -- 11/2017}{Audi Autonomous Driving Cup}{Universität Augsburg}{}{}{Entwicklung von vollautomatischen Fahrfunktionen und die dafür notwendigen Software-Architekturen innerhalb von C++-ADTF-Filtern für Audi-Q2-Modellfahrzeuge %im Maßstab 1:8
+\cventry{04/2017 -- 11/2017}{Audi Autonomous Driving Cup}{Universität Augsburg}{}{}{Entwicklung von vollautomatischen Fahrfunktionen und die dafür notwendigen Software-Architekturen innerhalb von C++-ADTF-Filtern für Audi-Q2-Modellfahrzeuge innerhalb des Uni-Augsburg Teams %im Maßstab 1:8
 }
 \cventry{03/2016 -- 07/2016}{Praktikum}{Universität Augsburg}{}{}{Entwicklung von C-basierten Mikrocontroller Programmen zur Steuerung von mobilen iRobot Roomba Robotern}
 \cventry{04/2015 -- 08/2015}{Bachelorarbeit}{Christ Elektronik GmbH}{Memmingen}{}{Analyse und Entwicklung eines Prototypen zur Portierung der, mit der Entwicklungsumgebung \dq VisBee\dq{} erstellten, .NET-Touch-Panel-Anwendungen unter Linux}
@@ -137,10 +138,9 @@
 \section{IT Kompetenzen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvline{Programmiersprachen}{C\# (gut), C++ (gut), Lua(gut), C und Java(grundlegend)}
-\cvline{IDEs}{Visual Studio, Unity, CoppeliaSim}
+\cvline{Programmiersprachen}{C++ und C\#(gut), Lua (gut)}
+\cvline{IDEs}{Visual Studio, CoppeliaSim, Halcon HDevelop}
 \cvline{Office}{Word, \LaTeX , Powerpoint, Outlook, Excel, Photoshop}
-\cvline{Robotik-Kenntnisse}{Fanuc, Kuka}
 
 \section{Sprachen} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

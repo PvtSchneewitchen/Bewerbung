@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{ngerman}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{ifpdf}
+\usepackage[pdftex]{color}
+\ifpdf
+  \usepackage[pdftex]{graphicx}
+\else
+ \usepackage[dvips]{graphicx}
+\fi
+
+\pagestyle{empty}
+
+\usepackage[scale=0.8]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Patrick}
+\def\familyname{Grüner}
+\def\FileAuthor{\firstname~\familyname}
+\def\FileTitle{\firstname~\familyname's Bewerbungsschreiben}
+\def\FileSubject{Bewerbungsschreiben}
+\def\FileKeyWords{\firstname~\familyname, Bewerbungsschreiben}
+
+\renewcommand{\ttdefault}{pcr}
+\hyphenation{ins-be-son-de-re}
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+%Liebherr yellow {254,180,1} black {0,0,0}
+%Multivac {0, 105, 180}
+%Grob {0,58,121}
+%Rhode {0,60,124}
+%BHS {0,80,148}
+%Boeringer {1,51,103}
+\definecolor{firstnamecolor}{RGB}{1,51,103}
+\definecolor{familynamecolor}{RGB}{1,51,103}
+\hypersetup{pdfborder=0 0 0}
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+	\raggedleft%
+	{\bfseries {\color{firstnamecolor}\firstname}~{\color{familynamecolor}\familyname}}\\[.35ex]
+	\small\itshape%
+	Jahnstraße 5\\
+	87700 Memmingen\\[.35ex]
+	\Mobilefone~+49 176 47705895\\
+	\Letter~\href{mailto:patrick.gmm91@gmail.com}{patrick.gmm91@gmail.com}
+\end{minipage}\\[0.5em]
+%
+{\color{firstnamecolor}\rule{\textwidth}{.25ex}}
+%
+\begin{minipage}[t]{.5\textwidth}
+	\raggedright%
+	% {\bfseries {\color{firstnamecolor}
+	\vspace*{1em}
+	Boehringer Ingelheim Pharma GmbH \& Co. KG\\[.35ex]
+	% }}
+	\small%
+	Binger Strasse 173  \\
+	55216 Ingelheim am Rhein 
+\end{minipage}
+%
+\hfill
+%
+\begin{minipage}[t]{.4\textwidth}
+	\raggedleft % US style
+	\today
+	%April 6, 2006 % US informal style
+	%05/04/2006 % UK formal style
+\end{minipage}\\[1em]
+\raggedright
+
+{\bfseries \color{familynamecolor}Bewerbung als (Professional) Laboratory Automation Engineer (ID: 231665)\\[1.5em]}
+
+Sehr geehrtes Team der Personalabteilung,\\[1em]
+%
+auf der Suche nach einer neuen beruflichen Perspektive, habe ich Ihre spannende Vakanz des (Professional) Laboratory Automation Engineer bei meiner Stellenrecherche entdeckt. Da ich als Softwareentwickler für Automationssysteme bereits viele Erfahrungen im Bereich Entwicklung, Projektmanagement und Engineering in der Automationsbranche sammeln konnte, bin ich sehr davon überzeugt diese Stelle optimal besetzen zu können.
+
+Seit circa fünf Jahren arbeite ich in der Entwicklung der Liebherr-Verzahntechnik GmbH im Bereich der Robotik-Automationssysteme. Dabei bin ich als projektleitender Softwareentwickler hauptverantwortlich für die Weiterentwicklung und Wartung der Bildverarbeitungssoftware LHRobotics.Vision, welche im Bereich der Vereinzelung von chaotischen Bauteilen mittels Industrieroboter eingesetzt wird. Hierbei arbeite ich erfolgreich in einem Team aus internen und externen Mitarbeitern zusammen. Während dieser Tätigkeit sammelte ich sowohl fundierte Erfahrung in der Softwareentwicklung mittels C++ und Lua, als auch im Entwerfen und Anpassen von Softwarearchitekturen innerhalb der Software. 
+
+Der Bereich der Bildverarbeitung ist ein zentraler Bestandteil der Robotik-Automation bei Liebherr, weshalb ich in diesem Bereich ebenfalls viel Expertise aufbauen konnte. So betreue ich mittlerweile den kompletten technischen Bereich der Bildverarbeitungssysteme in der Liebherr-Verzahntechnik GmbH, indem ich individuelle Systemarchitekturen aus Hard- und Software für Kundenprojekte auslege und umsetze. Die Bestandteile reichen hier von komplexen Vision Systemen bis hin zu Laserprofil- und Abstandssensoren. Hierbei stimme ich die Kundenanforderungen ab, berate frühzeitig zum Verhindern von Schwachstellen und kalkuliere die individuell entstehenden Kosten. Zusätzlich stimme ich mich mit den verschiedenen Fachbereichen aus der Mechanik, Elektrik und der SPS-Softwareentwicklung ab. 
+
+Darüber hinaus bin ich nicht nur im technischen Bereich tätig, sondern leite regelmäßig Entwicklungsprojekte, in welchen ich sowohl für die technische und wirtschaftliche Realisierung der Entwicklungsziele zuständig bin, als auch für die Koordination der Mitarbeiter aus den verschiedenen Fachabteilungen. Hierbei habe ich schon eine große Variation an verschiedenen Projekten erfolgreich abgeschlossen, wie beispielsweise die Implementierung von neuen Features in die LHRobotics.Vision-Software, die Standardisierung eingesetzter Bildverarbeitungs-Hardware und auch vom BMBF geförderte Forschungsprojekte mit externen Projektpartnern.  
+
+Wenn Sie einen Entwicklungsingenieur suchen, der sowohl selbstständig, als auch innerhalb eines Teams in der Lage ist komplexe Automationssysteme aus Hard- und Software zu entwickeln und zu betreuen, dann freue ich mich sehr über eine Einladung zu einem persönlichen Gespräch.
+
+
+Mit freundlichen Grüßen,\\[3em]
+
+\includegraphics[scale=0.1]{C:/Users/Patrick/Documents/Bewerbung/Anlagen/Unterschrift}\\
+{\bfseries \firstname~\familyname}\\
+%
+\vfill%
+%{\slshape \bfseries Bewerbungsunterlagen}\\
+% {\slshape Curriculum Vit\ae{}}
+\end{document}
